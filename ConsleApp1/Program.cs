@@ -4,8 +4,15 @@ using System.Diagnostics.CodeAnalysis;
 
 Console.WriteLine("Hello, World!!");
 string name="bob";
+
+Console.WriteLine("hello" + name);
+Console.WriteLine($"hello {name}" );
 Console.WriteLine("what is your first and last name?");
+name= Console.ReadLine();
+Console.WriteLine($"nice to meet you {name}");
 Console.WriteLine("what is your grade?");
+name = Console.ReadLine();
+Console.WriteLine($"good grade");
 Console.WriteLine("whats your student id?");
 name = Console.ReadLine();
-
+Console.WriteLine($"...");
