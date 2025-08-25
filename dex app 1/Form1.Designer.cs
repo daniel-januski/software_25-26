@@ -44,9 +44,9 @@
             this.button9 = new System.Windows.Forms.Button();
             this.button10 = new System.Windows.Forms.Button();
             this.logopicbox = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox101 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.logopicbox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox101)).BeginInit();
             this.SuspendLayout();
             // 
             // namelabel
@@ -197,14 +197,15 @@
             this.logopicbox.TabIndex = 15;
             this.logopicbox.TabStop = false;
             // 
-            // pictureBox1
+            // pictureBox101
             // 
-            this.pictureBox1.Image = global::dex_app_1.Properties.Resources.Screenshot_2025_08_20_073621;
-            this.pictureBox1.Location = new System.Drawing.Point(879, 21);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(317, 231);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.pictureBox101.Image = global::dex_app_1.Properties.Resources.Screenshot_2025_08_20_073621;
+            this.pictureBox101.Location = new System.Drawing.Point(879, 21);
+            this.pictureBox101.Name = "pictureBox101";
+            this.pictureBox101.Size = new System.Drawing.Size(317, 231);
+            this.pictureBox101.TabIndex = 0;
+            this.pictureBox101.TabStop = false;
+            this.pictureBox101.Visible = false;
             // 
             // Form1
             // 
@@ -228,11 +229,11 @@
             this.Controls.Add(this.buttonpre);
             this.Controls.Add(this.buttonnext);
             this.Controls.Add(this.namelabel);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.pictureBox101);
             this.Name = "Form1";
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.logopicbox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox101)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -240,7 +241,7 @@
 
         #endregion
 
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBox101;
         private System.Windows.Forms.Label namelabel;
         private System.Windows.Forms.Button buttonnext;
         private System.Windows.Forms.Button buttonpre;

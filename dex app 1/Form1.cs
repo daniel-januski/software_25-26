@@ -7,14 +7,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
 namespace dex_app_1
 {
     public partial class Form1 : Form
     {
-        
-           void picturebox1.visibility=false;
-
         public Form1()
         {
             InitializeComponent();
@@ -22,7 +18,8 @@ namespace dex_app_1
 
         private void button1_Click(object sender, EventArgs e)
         {
-          
+            pictureBox101.Visible = true;
+
         }
 
         private void button9_Click(object sender, EventArgs e)
