@@ -1,12 +1,16 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using static System.Console;
-int langth = 0;
-WriteLine("eneter charcter langth and width" + short.MaxValue);
-langth = short.Parse(Console.ReadLine());
-for (int i = 0; i < langth; i++)
-{
 
-    for (int j = 0; j < 10; j++) 
-      Write(j);
-    Console.WriteLine(i);
+WriteLine("Enter the perimiter of the square:");
+
+{
+    int side = 0;
+    for (int row = 0; row < side; row++)
+    {
+        for (int col = 0; col < side; col++)
+        {
+            Write("*");
+        }
+        WriteLine();
+    }
 }

@@ -19,10 +19,16 @@ namespace dex_app_1
         private void button1_Click(object sender, EventArgs e)
         {
             pictureBox101.Visible = true;
-
+            button9.Visible = true;
+            button10.Visible = true;
         }
 
         private void button9_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button10_Click(object sender, EventArgs e)
         {
 
         }

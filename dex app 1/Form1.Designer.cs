@@ -177,6 +177,7 @@
             this.button9.TabIndex = 16;
             this.button9.Text = "previous";
             this.button9.UseVisualStyleBackColor = true;
+            this.button9.Visible = false;
             this.button9.Click += new System.EventHandler(this.button9_Click);
             // 
             // button10
@@ -187,13 +188,15 @@
             this.button10.TabIndex = 17;
             this.button10.Text = "next";
             this.button10.UseVisualStyleBackColor = true;
+            this.button10.Visible = false;
+            this.button10.Click += new System.EventHandler(this.button10_Click);
             // 
             // logopicbox
             // 
             this.logopicbox.Image = global::dex_app_1.Properties.Resources.Screenshot_2025_08_20_073139;
             this.logopicbox.Location = new System.Drawing.Point(21, 12);
             this.logopicbox.Name = "logopicbox";
-            this.logopicbox.Size = new System.Drawing.Size(170, 65);
+            this.logopicbox.Size = new System.Drawing.Size(189, 98);
             this.logopicbox.TabIndex = 15;
             this.logopicbox.TabStop = false;
             // 
