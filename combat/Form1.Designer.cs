@@ -456,7 +456,7 @@
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(106, 240, 144);
-            ClientSize = new Size(1227, 680);
+            ClientSize = new Size(1227, 691);
             Controls.Add(p2bullet);
             Controls.Add(p1bullet);
             Controls.Add(pictureBoxflower1);
