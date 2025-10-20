@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36203.30 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "area calc", "area calc.csproj", "{A03C250B-4E96-495E-A6B7-302ED94C428B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A03C250B-4E96-495E-A6B7-302ED94C428B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A03C250B-4E96-495E-A6B7-302ED94C428B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A03C250B-4E96-495E-A6B7-302ED94C428B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A03C250B-4E96-495E-A6B7-302ED94C428B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {19A1FEC6-3B42-46CD-AC49-F5F01132777E}
+	EndGlobalSection
+EndGlobal

@@ -85,7 +85,9 @@ namespace combat
                 case Keys.Q: // Player 1 shoots with Q or Space
                     if (!p1BulletActive)
                     {
-                        p1bullet.Location = new Point(player1Position.X + playerSize.Width, player1Position.Y + playerSize.Height / 2 - bulletSize.Height / 2);
+                        // Set bullet position relative to player1's current position
+                        p1bullet.Left = player1Position.X + playerSize.Width;
+                        p1bullet.Top = player1Position.Y + playerSize.Height / 2 - bulletSize.Height / 2;
                         p1bullet.Size = bulletSize;
                         p1bullet.SizeMode = PictureBoxSizeMode.StretchImage;
                         p1bullet.Visible = true;
@@ -96,7 +98,9 @@ namespace combat
                 case Keys.OemQuestion: // Player 2 shoots with / or Enter
                     if (!p2BulletActive)
                     {
-                        p2bullet.Location = new Point(player2Position.X - bulletSize.Width, player2Position.Y + playerSize.Height / 2 - bulletSize.Height / 2);
+                        // Set bullet position relative to player2's current position
+                        p2bullet.Left = player2Position.X - bulletSize.Width;
+                        p2bullet.Top = player2Position.Y + playerSize.Height / 2 - bulletSize.Height / 2;
                         p2bullet.Size = bulletSize;
                         p2bullet.SizeMode = PictureBoxSizeMode.StretchImage;
                         p2bullet.Visible = true;
@@ -121,9 +125,39 @@ namespace combat
 
             // Only update bullet positions if not active
             if (!p1BulletActive)
-                UpdateP1BulletPosition();
+            {
+                p1bullet.Left = player1Position.X + playerSize.Width;
+                p1bullet.Top = player1Position.Y + playerSize.Height / 2 - bulletSize.Height / 2;
+            }
             if (!p2BulletActive)
-                UpdateP2BulletPosition();
+            {
+                p2bullet.Left = player2Position.X - bulletSize.Width;
+                p2bullet.Top = player2Position.Y + playerSize.Height / 2 - bulletSize.Height / 2;
+            }
+        }
+
+        private void FireP1Bullet()
+        {
+            if (!p1BulletActive)
+            {
+                p1bullet.Location = new Point(player1Position.X + playerSize.Width, player1Position.Y + playerSize.Height / 2 - bulletSize.Height / 2);
+                p1bullet.Size = bulletSize;
+                p1bullet.SizeMode = PictureBoxSizeMode.StretchImage;
+                p1bullet.Visible = true;
+                p1BulletActive = true;
+            }
+        }
+
+        private void FireP2Bullet()
+        {
+            if (!p2BulletActive)
+            {
+                p2bullet.Location = new Point(player2Position.X - bulletSize.Width, player2Position.Y + playerSize.Height / 2 - bulletSize.Height / 2);
+                p2bullet.Size = bulletSize;
+                p2bullet.SizeMode = PictureBoxSizeMode.StretchImage;
+                p2bullet.Visible = true;
+                p2BulletActive = true;
+            }
         }
 
         private void BulletTimer_Tick(object? sender, EventArgs e)
